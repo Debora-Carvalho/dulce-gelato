@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c15186;
+    color: #FFFFFF;
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Estilização da homepage*/
+
+
+nav {
+    /* max-width: 1120px; */
+    width: auto;
+    margin: auto;
+    padding: 1.5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Borel;
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    transition: color 0.3s;
+    margin-left: auto;
+}
+
+.menu a {
+    color: #FFF2E780;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: #fde096;
+}
+
+
+.botao-login {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #ffffff; 
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 1.5rem;
+}
+
+.botao-login:hover {
+    background-color: #ffffff; 
+    color: #F652A0; 
+    border-color: #F652A0; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-image: url('/assets/images/imagem-hero.png');
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-conteudo {
+    margin: 2rem;
+}
+
+.hero-conteudo h1 {
+    font-family: Montserrat;
+    font-size: calc(4rem);
+    font-weight: 800;
+}
+
+.hero-conteudo h2 {
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.destaque {
+    font-family: Epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FBC740;
+}
+
+.botao-registro {
+    border-radius: 10px;
+    margin-top: 7%;
+}
+
+.botao-principal {
+    background-color: #fde096;
+    border: none;
+    color: #F652A0;
+    padding: 15px 32px;
+    width: 360px;
+    font-family: Inter;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    margin-bottom: 0;
+}
+
+.botao-principal:hover {
+    background-color: #F652A0;
+    color: #FFFFFF;
+}
+
+.descricao-botao-registro {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFF2E7;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    background-color: #c15186;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-confirnacao{
+    background: #c15186;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copy {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.icones-midias {
+    display: flex;
+    gap: 10px; 
+}
+
+.icone-midias {
+    font-size: 24px; 
+    color: #FFFFFF; 
+}
+
+.logo-footer {
+    font-family: Borel;
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    /* align-self: center; 
+    margin-bottom: auto;
+    margin-top: auto; */
+}
+
+/*Estilização da página de cadastro*/
+
+.body-cadastro {
+    margin-top: 2%;
+    font-family: Inter, sans-serif;
+    background-image: url(images/background-fundo-amarelo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cadastro-card {
+    width: 700px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #F652A0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-cabecalho {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-cabecalho img {
+    border-radius: 50%;
+}
+
+.card-cadastro-titulo {
+    font-family: Borel;
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.campo-cadastro {
+    margin-bottom: 20px;
+}
+
+.campo-cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.campo-cadastro input[type="text"],
+.campo-cadastro input[type="email"],
+.campo-cadastro input[type="number"],
+.campo-cadastro input[type="password"],
+.campo-cadastro input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.campo-cadastro input[type="checkbox"],
+.campo-cadastro input[type="radio"] {
+    margin-right: 5px;
+}
+
+.info-termoscondicoes {
+    font-size: 12px;
+    color:#FFAEBC;
+}
+
+.botao-cadastro{
+    background-color: #fde096;
+    border: none;
+    color: #F652A0;
+    padding: 15px 32px;
+    font-family: Inter;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.botao-cadastro:hover{
+    background-color: #FFAEBC;
+    color: #FFFFFF;
+}
+
+.logo-inteira{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
