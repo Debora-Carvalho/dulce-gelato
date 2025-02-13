@@ -17,7 +17,8 @@ Dulce Gelato é um projeto de **landing page para uma sorveteria**, desenvolvido
 ## 👩‍💻 Desenvolvedoras
 - Débora Carvalho
 - Isabella Gonçalves
-[alunas do 3° semestre de Desenvolvimento de Software Multiplataforma da Fatec Zona Leste]
+
+ (alunas do 3° semestre de Desenvolvimento de Software Multiplataforma da Fatec Zona Leste)
 
 ## 📅 Última Atualização
 - **Data**: Fev.2025
