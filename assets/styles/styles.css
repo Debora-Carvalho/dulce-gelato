@@ -25,8 +25,6 @@ ul {
 }
 
 /*Estilização da homepage*/
-
-
 nav {
     /* max-width: 1120px; */
     width: auto;
@@ -47,6 +45,18 @@ nav {
     padding-top: 30px;
 }
 
+
+.logo-inteira {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-inteira i {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -63,7 +73,6 @@ nav {
 .menu a:hover{
     color: #fde096;
 }
-
 
 .botao-login {
     font-family: Inter;
@@ -115,18 +124,14 @@ main {
     font-weight: 800;
 }
 
+.hero-conteudo h1 span {
+    color: #c15186;
+}
+
 .hero-conteudo h2 {
     font-family: Inter;
     font-size: 1.5rem;
     font-weight: 400;
-}
-
-.destaque {
-    font-family: Epilogue;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #FBC740;
 }
 
 .botao-registro {
@@ -173,6 +178,15 @@ main {
     color: #FFF2E7;
 }
 
+/* Estilização footer */
+
+hr.wave {
+    border: 0;
+    height: 60px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="60" viewBox="0 0 1600 40"><path fill="none" stroke="%23fde096" stroke-width="2" d="M0,20 Q 100,10 200,20 T 400,20 T 600,20 T 800,20 T 1000,20 T 1200,20 T 1400,20 T 1600,20" /></svg>') bottom no-repeat;
+    background-size: 100% 100%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -184,26 +198,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.footer-confirnacao{
-    background: #c15186;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .footer-copy {
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .icones-midias {
@@ -221,25 +221,9 @@ footer {
     font-size: 32px;
     font-weight: 600;
     color: #FFFFFF;
-    /* align-self: center; 
-    margin-bottom: auto;
-    margin-top: auto; */
 }
 
-/*Estilização da página de cadastro*/
-
-.body-cadastro {
-    margin-top: 2%;
-    font-family: Inter, sans-serif;
-    background-image: url(images/background-fundo-amarelo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
-
+/*Estilização do formulário de cadastro*/
 
 .cadastro-card {
     width: 700px;
@@ -324,15 +308,16 @@ footer {
     color: #FFFFFF;
 }
 
-.logo-inteira{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
+/* Estilização do jogo da velha */
 
 .jogo-velha {
     text-align: center;
+}
+
+.jogo-conteudo h3 {
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .scoreboard {
